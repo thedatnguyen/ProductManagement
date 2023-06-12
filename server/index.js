@@ -1,6 +1,6 @@
 const bodyParser = require("body-parser");
 const express = require("express");
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const app = express();
 const port = process.env.PORT || 8888;
 const cors = require("cors");
@@ -10,8 +10,8 @@ app.use(cors());
 const con = mysql.createConnection({
   host: "127.0.0.1",
   port: 3306,
-  user: "dnguyen",
-  password: "dnguyen",
+  user: "root",
+  password: "Dnguyen28051998@Tien",
   database: "ProductManagement",
 });
 
