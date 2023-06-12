@@ -1,0 +1,20 @@
+{
+  "name": "sample_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass -w src/sass/index.scss public/main.css --recursive",
+    "start": "node-sass -w src/sass/index.scss public/main.css --recursive & nodemon server",
+    "nodemon": "nodemon ./bin/www"
+  },
+  "author": "Tuanps",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.18.1",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
